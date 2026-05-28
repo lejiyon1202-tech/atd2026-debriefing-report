@@ -354,6 +354,62 @@ h1, h2, h3, h4, .mono { font-family: 'Outfit', 'Noto Sans KR', sans-serif; }
 .row-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
 .label { font-family: 'Outfit', sans-serif; font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin-bottom: 4px; }
 
+/* ── STRATEGY 2027 INTEGRATION ───────────────────── */
+.crisis-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:14px; margin-bottom:20px; }
+.crisis-card { background:var(--card); border:1px solid var(--border); border-radius:var(--rs); padding:22px 16px; box-shadow:var(--sh); text-align:center; position:relative; overflow:hidden; }
+.crisis-card::after { content:''; position:absolute; bottom:0; left:0; right:0; height:3px; }
+.crisis-red::after { background:var(--accent); }
+.crisis-blue::after { background:var(--blue); }
+.crisis-amber::after { background:var(--amber); }
+.crisis-teal::after { background:var(--teal); }
+.crisis-num { font-family:'Outfit',sans-serif; font-size:42px; font-weight:800; line-height:1; margin-bottom:7px; }
+.crisis-red .crisis-num { color:var(--accent); }
+.crisis-blue .crisis-num { color:var(--blue); }
+.crisis-amber .crisis-num { color:var(--amber); }
+.crisis-teal .crisis-num { color:var(--teal); }
+.crisis-label { font-size:12px; color:var(--t2); line-height:1.55; font-weight:500; }
+.crisis-src { font-size:10px; color:var(--muted); margin-top:6px; font-family:'Outfit',sans-serif; letter-spacing:.03em; }
+.atd-quote { background:var(--t1); border-radius:var(--rs); padding:24px 28px; margin-bottom:20px; position:relative; overflow:hidden; }
+.atd-quote::before { content:'"'; position:absolute; top:-10px; left:18px; font-size:110px; color:rgba(232,82,26,.12); font-family:'Outfit',sans-serif; line-height:1; pointer-events:none; }
+.atd-quote-text { font-family:'Outfit',sans-serif; font-size:19px; font-weight:700; color:#fff; line-height:1.55; position:relative; z-index:1; }
+.atd-quote-src { font-size:11px; color:rgba(255,255,255,.4); margin-top:8px; font-family:'Outfit',sans-serif; letter-spacing:.05em; }
+.lead4-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:14px; }
+.lead4-card { background:var(--card); border:1px solid var(--border); border-radius:var(--rs); padding:20px 16px; box-shadow:var(--sh); }
+.lead4-icon { width:42px; height:42px; border-radius:10px; display:flex; align-items:center; justify-content:center; font-size:20px; margin-bottom:12px; }
+.lead4-tag { font-family:'Outfit',sans-serif; font-size:9px; font-weight:800; letter-spacing:.1em; text-transform:uppercase; margin-bottom:5px; }
+.lead4-name { font-family:'Outfit',sans-serif; font-size:14px; font-weight:800; color:var(--t1); margin-bottom:7px; }
+.lead4-def { font-size:12px; color:var(--t2); line-height:1.55; margin-bottom:10px; }
+.lead4-comp { font-size:11px; color:var(--muted); padding-top:10px; border-top:1px solid var(--border); line-height:1.55; }
+.matrix-tbl { width:100%; border-collapse:collapse; font-size:12px; }
+.matrix-tbl th { padding:10px 14px; font-family:'Outfit',sans-serif; font-size:10.5px; font-weight:700; letter-spacing:.04em; text-align:center; background:var(--t1); color:rgba(255,255,255,.75); white-space:nowrap; }
+.matrix-tbl th:first-child { text-align:left; min-width:148px; }
+.matrix-tbl td { padding:10px 14px; border:1px solid var(--border); vertical-align:top; line-height:1.5; }
+.matrix-tbl td:first-child { background:var(--bg); font-weight:700; color:var(--t1); font-family:'Outfit',sans-serif; font-size:12px; min-width:140px; white-space:nowrap; }
+.mx-core { background:rgba(5,150,105,.07); }
+.mx-support { background:rgba(180,83,9,.06); }
+.mx-tag { display:inline-block; font-weight:700; font-size:11px; margin-bottom:3px; }
+.mx-tag.core { color:var(--green); }
+.mx-tag.support { color:var(--amber); }
+.mx-desc { font-size:11px; color:var(--muted); line-height:1.5; }
+.flywheel-panel { background:linear-gradient(135deg,#0F1623,#1b2538); border-radius:var(--rs); padding:36px 32px; position:relative; overflow:hidden; }
+.flywheel-panel::before { content:''; position:absolute; top:-80px; right:-80px; width:280px; height:280px; border-radius:50%; background:radial-gradient(ellipse,rgba(232,82,26,.14) 0%,transparent 65%); }
+.fw-body { position:relative; z-index:1; }
+.fw-flow { display:grid; grid-template-columns:1fr 28px 1fr 28px 1fr; align-items:center; gap:10px; margin-bottom:28px; }
+.fw-node { background:rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.1); border-radius:8px; padding:18px 14px; text-align:center; }
+.fw-node-label { font-family:'Outfit',sans-serif; font-size:9px; font-weight:800; letter-spacing:.1em; text-transform:uppercase; margin-bottom:7px; }
+.fw-node-title { font-family:'Outfit',sans-serif; font-size:14px; font-weight:700; color:#fff; margin-bottom:5px; }
+.fw-node-desc { font-size:11px; color:rgba(255,255,255,.4); line-height:1.6; }
+.fw-arr { text-align:center; color:rgba(255,255,255,.25); font-size:20px; line-height:1; }
+.fw-quote-block { text-align:center; border-top:1px solid rgba(255,255,255,.08); padding-top:24px; }
+.fw-quote-main { font-family:'Outfit',sans-serif; font-size:19px; font-weight:700; color:#fff; line-height:1.55; margin-bottom:10px; }
+.fw-quote-sub { font-size:12px; color:rgba(255,255,255,.4); font-family:'Outfit',sans-serif; letter-spacing:.05em; }
+.pos-tbl { width:100%; border-collapse:collapse; font-size:12.5px; }
+.pos-tbl th { padding:10px 16px; font-family:'Outfit',sans-serif; font-size:10.5px; font-weight:700; letter-spacing:.04em; background:var(--bg); color:var(--muted); border-bottom:2px solid var(--border); text-align:left; }
+.pos-tbl th:last-child { background:var(--accent-l); color:var(--accent); }
+.pos-tbl td { padding:10px 16px; border-bottom:1px solid var(--border); color:var(--t2); vertical-align:top; line-height:1.55; }
+.pos-tbl td:last-child { color:var(--t1); font-weight:600; background:rgba(232,82,26,.025); }
+.pos-tbl tr:last-child td { border-bottom:none; }
+
 @media (max-width: 768px) {
   .w { padding: 0 20px; }
   .trend-grid, .strategy-grid, .insight-trio { grid-template-columns: 1fr; }
@@ -362,6 +418,10 @@ h1, h2, h3, h4, .mono { font-family: 'Outfit', 'Noto Sans KR', sans-serif; }
   .sum-item { border-right: none; border-bottom: 1px solid var(--border); padding: 14px 0; }
   .stat-bar { grid-template-columns: repeat(2, 1fr); }
   .scorecard-items { grid-template-columns: 1fr; }
+  .crisis-grid { grid-template-columns: repeat(2, 1fr); }
+  .lead4-grid { grid-template-columns: 1fr 1fr; }
+  .fw-flow { grid-template-columns: 1fr; }
+  .fw-arr { display: none; }
 }
 </style>
 </head>
@@ -382,7 +442,7 @@ h1, h2, h3, h4, .mono { font-family: 'Outfit', 'Noto Sans KR', sans-serif; }
       <span class="cover-chip chip-teal">AI RolePlay 4개사</span>
       <span class="cover-chip chip-purple">vs. Hunet AI Roleplaying</span>
       <span class="cover-chip chip-green">리더십 세션</span>
-      <span class="cover-chip chip-slate">휴넷 2027 전략</span>
+      <span class="cover-chip chip-slate">휴넷 2027 통합 전략</span>
     </div>
   </div>
 </div>
@@ -417,7 +477,7 @@ h1, h2, h3, h4, .mono { font-family: 'Outfit', 'Noto Sans KR', sans-serif; }
       <button class="tab-btn new-tab" data-tab="roleplay">AI RolePlay 심층</button>
       <button class="tab-btn new-tab" data-tab="assessment">AI 인바스켓·DC</button>
       <button class="tab-btn new-tab" data-tab="versus">Hunet AI Roleplaying</button>
-      <button class="tab-btn" data-tab="hunet">휴넷 2027 전략</button>
+      <button class="tab-btn" data-tab="hunet">휴넷 2027 통합 전략</button>
     </div>
   </div>
 </div>
@@ -1494,77 +1554,215 @@ h1, h2, h3, h4, .mono { font-family: 'Outfit', 'Noto Sans KR', sans-serif; }
 <div class="tab-panel" id="tab-hunet">
 <div class="w">
 
+  <!-- SECTION A: 전략 배경 -->
   <div class="section" style="margin-top:8px;">
-    <div class="section-title">휴넷 2027 AI &amp; Tech 전략 로드맵</div>
+    <div class="section-title">휴넷 2027 통합 전략 — 왜 지금인가</div>
+
+    <div class="atd-quote">
+      <div class="atd-quote-text">"AI is the brush.<br>Human potential is the masterpiece."</div>
+      <div class="atd-quote-src">— ATD 2026 키노트 · Embrace Disruption. Direct the Future.</div>
+    </div>
+
+    <div class="crisis-grid">
+      <div class="crisis-card crisis-red">
+        <div class="crisis-num">45%</div>
+        <div class="crisis-label">10년 내 CEO<br>생존 위기</div>
+        <div class="crisis-src">DDI 2024 · ATD26 세션2</div>
+      </div>
+      <div class="crisis-card crisis-blue">
+        <div class="crisis-num">77%</div>
+        <div class="crisis-label">조직 리더십이<br>충분하지 않다는 응답</div>
+        <div class="crisis-src">DDI 2024 · ATD26 세션2</div>
+      </div>
+      <div class="crisis-card crisis-amber">
+        <div class="crisis-num">6%</div>
+        <div class="crisis-label">리더십 준비<br>"매우 자신" 있는 비율</div>
+        <div class="crisis-src">DDI 2024 · ATD26 세션2</div>
+      </div>
+      <div class="crisis-card crisis-teal">
+        <div class="crisis-num">90%</div>
+        <div class="crisis-label">AI 도입 시 콘텐츠<br>제작시간 단축 가능</div>
+        <div class="crisis-src">ATD26 Expo 91p · 휴넷 내부</div>
+      </div>
+    </div>
+
+    <div class="card" style="background:var(--accent-l);border-color:var(--accent-b);">
+      <div class="label" style="color:var(--accent);">전략 필요성</div>
+      <div style="font-size:13.5px;color:var(--t1);line-height:1.8;margin-top:6px;">
+        리더십 위기와 교육 제작 병목이 동시에 존재한다. 기술이 리더십을 대체하는 것이 아니라, <strong>리더십 발전을 가속하는 인프라로 기능</strong>해야 한다. 테크(속도·도달범위)와 리더십 개발(방향·깊이)의 통합이 휴넷 2027 전략의 핵심이다.
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION B: 리더십 변화 4방향 -->
+  <div class="section">
+    <div class="section-title">리더십 변화 4방향 — ATD26 세션2 기반</div>
+    <div class="lead4-grid">
+      <div class="lead4-card">
+        <div class="lead4-icon" style="background:rgba(29,101,200,.1);">🔄</div>
+        <div class="lead4-tag" style="color:var(--blue);">Direction 01</div>
+        <div class="lead4-name">Learn-it-all</div>
+        <div class="lead4-def">빠르게 배우고 언러닝하는 메타인지 능력. "아는 것"에서 "계속 배우는 것"으로 리더십의 근본이 전환된다.</div>
+        <div class="lead4-comp">지속학습력 · 스킬 재정의 · 자기인식</div>
+      </div>
+      <div class="lead4-card">
+        <div class="lead4-icon" style="background:rgba(124,58,237,.1);">🧭</div>
+        <div class="lead4-tag" style="color:var(--purple);">Direction 02</div>
+        <div class="lead4-name">Inner Capacity</div>
+        <div class="lead4-def">내면 운영체계 고도화. 기술 스킬보다 자기조절·회복탄력성·목적의식이 핵심 경쟁력이 된다.</div>
+        <div class="lead4-comp">자기조절 · 회복탄력성 · 목적의식</div>
+      </div>
+      <div class="lead4-card">
+        <div class="lead4-icon" style="background:rgba(232,82,26,.1);">⚖️</div>
+        <div class="lead4-tag" style="color:var(--accent);">Direction 03</div>
+        <div class="lead4-name">Judgment-first</div>
+        <div class="lead4-def">AI와 사람의 역할을 구분하는 판단력. 무엇을 위임하고 무엇을 직접 결정할 것인가의 판단 능력.</div>
+        <div class="lead4-comp">의사결정력 · 윤리적 판단 · 맥락 해석</div>
+      </div>
+      <div class="lead4-card">
+        <div class="lead4-icon" style="background:rgba(5,150,105,.1);">🎯</div>
+        <div class="lead4-tag" style="color:var(--green);">Direction 04</div>
+        <div class="lead4-name">Team Orchestrator</div>
+        <div class="lead4-def">팀의 집단지성을 이끌어내는 오케스트레이터. 지시가 아닌 심리적 안전감과 협업 설계로 팀을 움직인다.</div>
+        <div class="lead4-comp">협업 설계 · 심리적 안전감 · 팔로워십</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION C: 테크 3개 솔루션 -->
+  <div class="section">
+    <div class="section-title">테크 3개 솔루션 — 리더십 발전 인프라</div>
     <div class="strategy-grid">
       <div class="strategy-card">
-        <div class="strategy-no">PROJECT 01</div>
+        <div class="strategy-no">TECH 01 · 스킬의 지도</div>
         <div class="strategy-name">Skills Galaxy</div>
-        <div class="strategy-desc">한국 직무·산업 특화 스킬 그래프 구축. Lightcast 등 글로벌 표준과 매핑하여 한국어 스킬 온톨로지를 독자적으로 구축. 콘텐츠 자동 태깅 실현.</div>
+        <div class="strategy-desc">리더가 어디에 있고 어디로 가야 하는지 스킬 온톨로지로 시각화. 글로벌 표준 대비 한국 직무·산업 맥락을 반영한 독자적 스킬 체계.</div>
         <div class="strategy-kpi">
-          <div><span class="kpi-label-small">직무</span> 한국 직무 1,000+</div>
-          <div><span class="kpi-label-small">스킬</span> 스킬 22,000+</div>
+          <div><span class="kpi-label-small">규모</span> 한국 직무 1,000+ · 스킬 22,000+</div>
           <div><span class="kpi-label-small">자동화</span> 콘텐츠 자동 태깅 99%+</div>
+          <div><span class="kpi-label-small">역할</span> Expectation 정의 + Readiness 진단</div>
         </div>
       </div>
       <div class="strategy-card">
-        <div class="strategy-no">PROJECT 02</div>
+        <div class="strategy-no">TECH 02 · 콘텐츠 제조공장</div>
         <div class="strategy-name">AI Learning Builder</div>
-        <div class="strategy-desc">코스 생성 + 문서·영상·시뮬레이션 통합 생성 엔진. 한국어 자연성 최적화 + 전문 PD 검수 워크플로 내재화. ATD26 Trend 03 직접 대응.</div>
+        <div class="strategy-desc">리더십 개발에 필요한 콘텐츠를 90% 빠르게, 한국어 네이티브 품질로 생성. 롤플레잉·인바스켓·GD 시나리오 콘텐츠 즉각 제작 가능.</div>
         <div class="strategy-kpi">
-          <div><span class="kpi-label-small">목표</span> 제작 시간 90% 단축</div>
-          <div><span class="kpi-label-small">품질</span> 한국어 품질 SOTA</div>
-          <div><span class="kpi-label-small">검수</span> 전문 PD 검수 100%</div>
+          <div><span class="kpi-label-small">속도</span> 제작시간 90% 단축 (Months → Minutes)</div>
+          <div><span class="kpi-label-small">품질</span> 한국어 SOTA · 전문 PD 검수 100%</div>
+          <div><span class="kpi-label-small">역할</span> Journey System 콘텐츠 즉각 생성</div>
         </div>
       </div>
       <div class="strategy-card">
-        <div class="strategy-no">PROJECT 03</div>
+        <div class="strategy-no">TECH 03 · 데이터 엔진</div>
         <div class="strategy-name">LABS 3.0</div>
-        <div class="strategy-desc">Skill Ontology + AI 콘텐츠 통합 차세대 LMS. 학습자별 맞춤 경로 AI 코치 임베디드. Absorb Aura의 ROI 자동 연산에 대응하는 실시간 성과 측정.</div>
+        <div class="strategy-desc">리더 개개인의 학습 여정을 데이터로 연결하고 ROI를 측정하는 차세대 LMS. AI 튜터 임베디드 · 실시간 코칭 · Kirkpatrick L4 자동화.</div>
         <div class="strategy-kpi">
-          <div><span class="kpi-label-small">개인화</span> AI 추천 알고리즘</div>
-          <div><span class="kpi-label-small">코칭</span> AI 튜터 임베디드</div>
-          <div><span class="kpi-label-small">측정</span> 실시간 ROI 측정</div>
+          <div><span class="kpi-label-small">개인화</span> AI 추천 알고리즘 · 맞춤 경로 설계</div>
+          <div><span class="kpi-label-small">코칭</span> AI 튜터 임베디드 · 실시간 피드백</div>
+          <div><span class="kpi-label-small">측정</span> 실시간 ROI · Kirkpatrick L4 자동화</div>
         </div>
       </div>
     </div>
   </div>
 
+  <!-- SECTION D: 4×3 연결 매핑 매트릭스 -->
   <div class="section">
-    <div class="section-title">글로벌 트렌드와 휴넷 전략의 연결</div>
-    <div class="tbl-wrap">
-      <table class="data-table">
-        <thead><tr><th>ATD26 메가트렌드</th><th>글로벌 리더</th><th>휴넷 대응</th></tr></thead>
+    <div class="section-title">리더십 × 테크 연결 매핑 매트릭스</div>
+    <p style="font-size:12.5px;color:var(--muted);margin-bottom:14px;"><span style="color:var(--green);font-weight:700;">✅ 핵심 연결</span> &nbsp;&nbsp; <span style="color:var(--amber);font-weight:700;">⚠️ 지원적 연결</span> &nbsp;— 4방향 리더십 × 3개 테크 솔루션의 역할 분담</p>
+    <div style="overflow-x:auto;">
+      <table class="matrix-tbl">
+        <thead>
+          <tr>
+            <th>리더십 방향</th>
+            <th>Skills Galaxy<br><span style="font-weight:400;opacity:.6;font-size:9px;">스킬의 지도</span></th>
+            <th>AI Learning Builder<br><span style="font-weight:400;opacity:.6;font-size:9px;">콘텐츠 제조공장</span></th>
+            <th>LABS 3.0<br><span style="font-weight:400;opacity:.6;font-size:9px;">데이터 엔진</span></th>
+          </tr>
+        </thead>
         <tbody>
           <tr>
-            <td><strong>AI = 인프라</strong></td>
-            <td>Absorb Aura (ROI 자동 연산), Coursera (SkillSets)</td>
-            <td>LABS 3.0 실시간 ROI 측정</td>
+            <td><span style="color:var(--blue);">◆</span> Learn-it-all</td>
+            <td class="mx-core"><span class="mx-tag core">✅ 핵심</span><div class="mx-desc">스킬 22,000+ 온톨로지로 "무엇을 배워야 하는가" 시각화</div></td>
+            <td class="mx-core"><span class="mx-tag core">✅ 핵심</span><div class="mx-desc">새 스킬 출현 즉시 콘텐츠 제작 (Months → Minutes)</div></td>
+            <td class="mx-core"><span class="mx-tag core">✅ 핵심</span><div class="mx-desc">개인화 추천으로 리더 맞춤 언러닝-재학습 경로 자동 설계</div></td>
           </tr>
           <tr>
-            <td><strong>Skill = 관계그래프</strong></td>
-            <td>Gloat (동적 그래프), Lightcast (Open Skills), Cornerstone</td>
-            <td>Skills Galaxy — 한국 특화 스킬 온톨로지</td>
+            <td><span style="color:var(--purple);">◆</span> Inner Capacity</td>
+            <td class="mx-support"><span class="mx-tag support">⚠️ 지원</span><div class="mx-desc">소프트스킬 태깅 99%+로 내면 역량 가시화</div></td>
+            <td class="mx-core"><span class="mx-tag core">✅ 핵심</span><div class="mx-desc">롤플레잉·코칭 시나리오 자동 생성 → 반복 연습</div></td>
+            <td class="mx-core"><span class="mx-tag core">✅ 핵심</span><div class="mx-desc">AI 튜터·코칭 임베딩 → 실시간 피드백으로 내면 변화 촉진</div></td>
           </tr>
           <tr>
-            <td><strong>콘텐츠 = 생성</strong></td>
-            <td>Articulate 360 (AI 저작), 360Learning (2분 코스), UMU (AGL)</td>
-            <td>AI Learning Builder — 한국어 품질 + PD 검수</td>
+            <td><span style="color:var(--accent);">◆</span> Judgment-first</td>
+            <td class="mx-core"><span class="mx-tag core">✅ 핵심</span><div class="mx-desc">직무별 판단 요구 스킬 매핑 → "어떤 판단이 요구되는가"</div></td>
+            <td class="mx-core"><span class="mx-tag core">✅ 핵심</span><div class="mx-desc">인바스켓·의사결정 시뮬레이션 콘텐츠 AI 자동 제작</div></td>
+            <td class="mx-core"><span class="mx-tag core">✅ 핵심</span><div class="mx-desc">실시간 ROI 측정으로 판단력 개발 효과 객관화</div></td>
           </tr>
           <tr>
-            <td><strong>AI RolePlay = 인프라화</strong></td>
-            <td>UMU (음성+ManaDojo), Tenor (250+ 시나리오), Docebo (4축 Scorecard)</td>
-            <td>Hunet AI Roleplaying — 한국어 네이티브 + HRD 맥락 특화</td>
+            <td><span style="color:var(--green);">◆</span> Team Orchestrator</td>
+            <td class="mx-support"><span class="mx-tag support">⚠️ 지원</span><div class="mx-desc">팀 협업 스킬 매핑 → 오케스트레이터 역량 체계화</div></td>
+            <td class="mx-core"><span class="mx-tag core">✅ 핵심</span><div class="mx-desc">GD·팀 협업 시나리오 → 다양한 팀 상황 연습</div></td>
+            <td class="mx-core"><span class="mx-tag core">✅ 핵심</span><div class="mx-desc">팀 학습 데이터 집계 → 집단 학습 수준 대시보드 실시간</div></td>
           </tr>
         </tbody>
       </table>
     </div>
   </div>
 
-  <div class="card" style="background:linear-gradient(135deg,rgba(232,82,26,.05),rgba(29,101,200,.05));border-color:var(--accent-b);">
-    <div class="label" style="color:var(--accent);">핵심 시사점</div>
-    <div style="font-size:14px;color:var(--t1);line-height:1.8;margin-top:6px;">
-      ATD26 3대 트렌드는 모두 "한국어·한국 직무 특화"라는 공통 약점을 노출한다. 글로벌 벤더의 스킬 라이브러리·AI 콘텐츠는 영어 중심이며 한국 산업 구조와 맞지 않는다. AI RolePlay 시장에서도 한국어 네이티브 솔루션은 우리가 유일한 경쟁자다. <strong>휴넷 2027 전략의 한국 특화 포지셔닝</strong>은 이 간극을 정확히 겨냥하고 있으며, Skills Galaxy → AI Learning Builder → LABS 3.0 → Hunet AI Roleplaying의 4축 로드맵이 글로벌 트렌드와 정합성을 갖추고 있다.
+  <!-- SECTION E: 글로벌 포지셔닝 + Flywheel -->
+  <div class="section">
+    <div class="section-title">글로벌 대비 휴넷 차별화 포지셔닝</div>
+    <div style="border-radius:var(--rs);overflow:hidden;border:1px solid var(--border);margin-bottom:20px;">
+      <table class="pos-tbl">
+        <thead>
+          <tr>
+            <th style="width:20%;">비교 항목</th>
+            <th style="width:42%;">글로벌 플랫폼 (Coursera / Docebo / 360L)</th>
+            <th style="width:38%;">휴넷 2027 통합 전략</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>스킬 체계</strong></td><td>글로벌 표준 중심</td><td>한국 직무 1,000+ · 한국 맥락 특화</td></tr>
+          <tr><td><strong>콘텐츠 언어</strong></td><td>영어 우선, 한국어 보조</td><td>한국어 SOTA 네이티브</td></tr>
+          <tr><td><strong>리더십 맥락</strong></td><td>B2C / 글로벌 일반</td><td>B2B 한국 기업교육 특화</td></tr>
+          <tr><td><strong>AI 코칭</strong></td><td>개인 대상</td><td>직급별 · 조직 맥락 대응</td></tr>
+          <tr><td><strong>ROI 측정</strong></td><td>수동 또는 제한적</td><td>LABS 3.0 실시간 자동화</td></tr>
+          <tr><td><strong>리더십 연결</strong></td><td>콘텐츠 단독</td><td>리더십 Journey 5단계 통합</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="flywheel-panel">
+      <div class="fw-body">
+        <div style="text-align:center;margin-bottom:22px;">
+          <div style="font-family:'Outfit',sans-serif;font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:rgba(232,82,26,.8);margin-bottom:6px;">리더십 발전 Flywheel</div>
+          <div style="font-family:'Outfit',sans-serif;font-size:14px;font-weight:500;color:rgba(255,255,255,.5);">테크가 가속하는 선순환 구조</div>
+        </div>
+        <div class="fw-flow">
+          <div class="fw-node">
+            <div class="fw-node-label" style="color:rgba(232,82,26,.9);">Step 01</div>
+            <div class="fw-node-title">Expectation</div>
+            <div class="fw-node-desc">이상향 정의<br>Skills Galaxy로<br>목표 스킬 시각화</div>
+          </div>
+          <div class="fw-arr">→</div>
+          <div class="fw-node">
+            <div class="fw-node-label" style="color:rgba(29,101,200,.9);">Step 02</div>
+            <div class="fw-node-title">Readiness</div>
+            <div class="fw-node-desc">준비도 진단<br>LABS 3.0으로<br>Gap 자동 측정</div>
+          </div>
+          <div class="fw-arr">→</div>
+          <div class="fw-node">
+            <div class="fw-node-label" style="color:rgba(5,150,105,.9);">Step 03</div>
+            <div class="fw-node-title">System</div>
+            <div class="fw-node-desc">Journey 실행<br>AI Builder로<br>콘텐츠 즉각 생성</div>
+          </div>
+        </div>
+        <div class="fw-quote-block">
+          <div class="fw-quote-main">"AI is the brush.<br>Human potential is the masterpiece."</div>
+          <div class="fw-quote-sub">— ATD 2026 키노트 · 휴넷 2027 통합 전략의 출발점</div>
+        </div>
+      </div>
     </div>
   </div>
 
